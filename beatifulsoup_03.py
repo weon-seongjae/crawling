@@ -14,12 +14,12 @@ html = '''
                 <li>파이썬 머신러닝 프로그래밍</li>
                 <li>안드로이드 블루투스 프로그래밍</li>
             </ul>
-            </div>
-        </ul>
+        </div>
     </body>
 </html>
 '''
 
 soup = BeautifulSoup(html, 'html.parser')
-lst = soup.select_one('h1')
-print(lst.text)
+lis = soup.select('div#main > ul.lecs > li')
+for li in lis:
+    print(li.text)
