@@ -23,8 +23,7 @@ except OSError as e:
 soup = BeautifulSoup(res, 'html.parser')
 img_lis = soup.select('div.img_area > a.thumb._thumb > img')
 for i, li in enumerate(img_lis, 1):
-    # print(i, li)
     full_file_name = os.path.join(save_path, str(i)+'.jpg')
     req.urlretrieve(li.get('data-source'), full_file_name)
-#
+
 print('다운로드 완료')
