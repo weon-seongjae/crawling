@@ -19,8 +19,8 @@ http://docs.python-requests.org/en/master/user/advanced
 
 # 로그인 유저 정보
 LOGIN_INFO = {
-'user_id': 'weonsj',
-'user_pw': 'wsj0707!@#'
+    'user_id': 'weonsj',
+    'user_pw': 'wsj0707!@#'
 }
 
 # Session 생성, with 구문 안에서 유지

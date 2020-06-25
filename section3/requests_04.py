@@ -32,7 +32,7 @@ jar.set('name', 'kim', domain='httpbin.org', path='/cookies')
 
 payload1 = {'key1' : 'value1', 'key2' : 'value2'} # dict 형태
 payload2 = (('key1', 'value1'), ('key2', 'value2'))  # tuple 형태
-payload3 = {'some': 'nice'}  # tuple 형태
+payload3 = {'some': 'nice'}  # json 형태
 
 # r = requests.post('http://httpbin.org/post', data=payload1) # form으로 전송
 # print(r.text)
